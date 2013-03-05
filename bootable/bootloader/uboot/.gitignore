@@ -1,0 +1,81 @@
+#
+# NOTE! Don't add files that are generated in specific
+# subdirectories here. Add them in the ".gitignore" file
+# in that subdirectory instead.
+#
+# Normal rules
+#
+
+*.rej
+*.orig
+*.a
+*.o
+*~
+*.swp
+*.patch
+
+#
+# Top-level generic files
+#
+
+/System.map
+/u-boot
+/u-boot.hex
+/u-boot.map
+/u-boot.bin
+/u-boot.srec
+/u-boot.ldr
+/u-boot.ldr.hex
+/u-boot.ldr.srec
+/u-boot.lds
+/u-boot-onenand.bin
+/u-boot-flexonenand.bin
+
+#
+# Generated files
+#
+
+*.depend
+/LOG
+/errlog
+/reloc_off
+
+/include/generated/
+/lib/asm-offsets.s
+
+# stgit generated dirs
+patches-*
+.stgit-edit.txt
+
+# quilt's files
+patches
+series
+
+# gdb files
+.gdb_history
+
+# cscope files
+cscope.*
+
+# tags files
+/tags
+/ctags
+/etags
+
+# OneNAND IPL files
+/onenand_ipl/onenand-ipl*
+/onenand_ipl/board/*/onenand*
+/onenand_ipl/board/*/*.S
+
+# sd_fusing generate files
+/sd_fusing/bl2.bin
+/sd_fusing/u-boot-emmc.bin
+/sd_fusing/bl2.bin.signed
+/sd_fusing/sd_mbr.dat
+/sd_fusing/u-boot-emmc-tz.bin
+/sd_fusing/reread_partition_table
+/sd_fusing/mk_bl1ah
+/sd_fusing/mk_bl2_security
+/sd_fusing/mkpad
+/sd_fusing/sd_fdisk
+
